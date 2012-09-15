@@ -28,7 +28,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'wool:black 16',
 	recipe = {
-		{'default:coal_lump', 'wool:grey'},
+		{'default:coal_lump', 'wool:dark_grey'},
 	}
 })
 
