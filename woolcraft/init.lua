@@ -1,6 +1,8 @@
 -- Wool crafting, for Minetest 0.4.2-rc1 and 0.4.3
 -- By Jordach, Jordan Snelling.
 
+-- Original Wool / Colour_Blocks crafts.
+
 minetest.register_craft({
 	output = 'wool:red 16',
 	recipe = {
@@ -53,23 +55,9 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'wool:cyan 16',
-	recipe = {
-		{'default:jungletree', 'wool:white'},
-	}
-})
-
-minetest.register_craft({
-	output = 'wool:violet 16',
-	recipe = {
-		{'wool:cyan', 'wool:red'},
-	}
-})
-
-minetest.register_craft({
 	output = 'wool:blue 16',
 	recipe = {
-		{'wool:cyan', 'wool:magenta'},
+		{'wool:cyan', 'wool:violet'},
 	}
 })
 
@@ -87,12 +75,7 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craft({
-	output = 'wool:magenta 16',
-	recipe = {
-		{'wool:blue', 'wool:violet'},
-	}
-})
+-- 16 colour wool addition crafts
 
 minetest.register_craft({
 	output = 'wool:dark_grey 16',
@@ -102,8 +85,45 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'wool:orange 16',
+	output = 'wool:dark_green 16',
 	recipe = {
 		{'wool:green', 'default:coal_lump'},
+	}
+})
+
+-- New craft methods
+
+minetest.register_craft({
+	output = 'wool:orange 16',
+	recipe = {
+		{'wool:desert_sand', 'wool:white'},
+	}
+})
+
+minetest.register_craft({
+	output = 'wool:dark_green 16',
+	recipe = {
+		{'wool:white', 'default:cactus'},
+	}
+})
+
+minetest.register_craft({
+	output = 'wool:cyan 16',
+	recipe = {
+		{'default:tree', 'wool:white'},
+	}
+})
+
+minetest.register_craft({
+	output = 'wool:magenta 16',
+	recipe = {
+		{'wool:blue', 'wool:violet'},
+	}
+})
+
+minetest.register_craft({
+	output = 'wool:violet 16',
+	recipe = {
+		{'wool:cyan', 'wool:red'},
 	}
 })
