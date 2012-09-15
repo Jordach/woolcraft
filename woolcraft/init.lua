@@ -103,7 +103,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'wool:orange 16',
 	recipe = {
-		{'wool:desert_sand', 'wool:white'},
+		{'default:desert_sand', 'wool:white'},
 	}
 })
 
