@@ -80,7 +80,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'wool:dark_grey 16',
 	recipe = {
-		{'wool:grey', 'wool:white'},
+		{'wool:grey', 'default:coal_lump'},
 	}
 })
 
@@ -88,6 +88,13 @@ minetest.register_craft({
 	output = 'wool:dark_green 16',
 	recipe = {
 		{'wool:green', 'default:coal_lump'},
+	}
+})
+
+minetest.register_craft({
+	output = 'wool:pink 16',
+	recipe = {
+		{'wool:red', 'wool:white'},
 	}
 })
 
